@@ -1,0 +1,14 @@
+:root{
+
+    --color-primary:#264238;
+    --color-secondary:#B89D6A;
+    --color-light:#F8F5EF;
+    --color-dark:#2F332B;
+    --color-white:#FFFFFF;
+
+    --font-title:'Cormorant Garamond', serif;
+    --font-body:'Manrope', sans-serif;
+
+    --transition:.3s ease;
+
+}
