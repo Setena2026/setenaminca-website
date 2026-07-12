@@ -1,0 +1,30 @@
+/* ===================================
+   SE'TENA TIERRA HÚMEDA
+   Main Stylesheet
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background: #F8F5EF;
+    color: #2E352C;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
