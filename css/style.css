@@ -42,13 +42,19 @@ nav{
 
 .logo{
 
-    font-family:'Cormorant Garamond',serif;
+    display:flex;
 
-    font-size:32px;
+    align-items:center;
 
-    letter-spacing:3px;
+}
 
-    color:white;
+.logo img{
+
+    height:60px;
+
+    width:auto;
+
+    display:block;
 
 }
 
