@@ -18,10 +18,6 @@ body{
    NAVBAR
 ========================== */
 
-/* ==========================
-   NAVBAR
-========================== */
-
 nav{
 
     position:fixed;
@@ -29,14 +25,15 @@ nav{
     left:0;
 
     width:100%;
-    height:85px;
+    height:80px;
 
     display:flex;
+    justify-content:space-between;
     align-items:center;
 
     padding:0 6%;
 
-    background:rgba(25,35,30,.40);
+    background:rgba(25,35,30,.35);
 
     backdrop-filter:blur(6px);
     -webkit-backdrop-filter:blur(6px);
@@ -47,13 +44,13 @@ nav{
 
 .nav-left{
 
-    flex:2;
+    flex:1.4;
 
 }
 
 .nav-center{
 
-    flex:2;
+    flex:2.6;
 
 }
 
@@ -63,37 +60,39 @@ nav{
 
     display:flex;
     justify-content:flex-end;
-
+    align-items:center;
 
 }
+
 .logo{
 
     display:flex;
     align-items:center;
 
-    width:380px;   /* Reserva más espacio para el logo */
-
 }
 
 .logo img{
 
-    height:60px;
-    width:100%;
-    object-fit:contain;
+    width:260px;
+    height:auto;
     display:block;
 
-}
 }
 
 nav ul{
 
     display:flex;
-
+    flex-direction:row;
     justify-content:center;
-
     align-items:center;
 
-    gap:28px;
+    gap:32px;
+
+    list-style:none;
+
+}
+
+nav li{
 
     list-style:none;
 
@@ -102,14 +101,20 @@ nav ul{
 nav a{
 
     color:white;
-
     text-decoration:none;
 
     font-size:15px;
-
     font-weight:500;
 
     letter-spacing:.5px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    opacity:.75;
 
 }
 
@@ -119,7 +124,7 @@ nav a{
 
     color:#C6A66A;
 
-    border-radius:40px;
+    border-radius:50px;
 
     padding:10px 24px;
 
@@ -143,23 +148,20 @@ header{
 
     height:100vh;
 
-   background-image:
-linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.35)
-),
-url("../images/backgroundimage.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        ),
+        url("../images/backgroundimage.jpg");
 
     background-size:cover;
-
     background-position:center;
 
     display:flex;
-
     flex-direction:column;
 
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
@@ -175,10 +177,11 @@ header h1{
     font-family:'Cormorant Garamond',serif;
 
     font-size:72px;
-
     font-weight:500;
 
     max-width:900px;
+
+    line-height:1.05;
 
 }
 
@@ -186,13 +189,128 @@ header p{
 
     margin-top:25px;
 
-    font-size:20px;
+    max-width:720px;
 
-    max-width:650px;
+    font-size:22px;
 
     line-height:1.7;
 
 }
+
+.hero-btn{
+
+    margin-top:45px;
+
+    display:inline-block;
+
+    border:1px solid #C6A66A;
+
+    color:#C6A66A;
+
+    text-decoration:none;
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#C6A66A;
+
+    color:white;
+
+}
+
+/* ==========================
+   WELCOME
+========================== */
+
+.welcome{
+
+    padding:120px 10%;
+
+    background:#f8f5ef;
+
+    text-align:center;
+
+}
+
+.welcome h2{
+
+    font-size:16px;
+
+    letter-spacing:4px;
+
+    color:#8C7A52;
+
+    margin-bottom:25px;
+
+}
+
+.welcome h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:56px;
+
+    font-weight:500;
+
+    line-height:1.2;
+
+    margin-bottom:35px;
+
+}
+
+.welcome p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+}
+
+.story-btn{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    padding:14px 34px;
+
+    border:1px solid #2F332B;
+
+    color:#2F332B;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.story-btn:hover{
+
+    background:#2F332B;
+
+    color:white;
+
+}
+
+/* ==========================
+   LOBBY PMS
+========================== */
+
 .ldrs-header{
-    display: none;
+
+    display:none;
+
 }
