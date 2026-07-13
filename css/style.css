@@ -31,7 +31,7 @@ nav{
     top:0;
     left:0;
 
-    z-index:1000;
+    z-index:600;
 
     background:rgba(25,35,30,.45);
 
@@ -52,9 +52,9 @@ nav{
 
 .logo img{
 
-    height:200px;
+    height:100px;
 
-    width:auto;
+    width:150;
 
     display:block;
 
