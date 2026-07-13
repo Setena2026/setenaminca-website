@@ -53,9 +53,9 @@ nav{
 
 .logo img{
 
-    height:200px;
+    height:150px;
 
-    width:auto;
+    width:300;
 
     display:block;
 
@@ -164,4 +164,7 @@ header p{
 
     line-height:1.7;
 
+}
+.ldrs-header{
+    display: none;
 }
