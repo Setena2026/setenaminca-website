@@ -18,45 +18,60 @@ body{
    NAVBAR
 ========================== */
 
+/* ==========================
+   NAVBAR
+========================== */
+
 nav{
-
- width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:10px 3%;
 
     position:fixed;
     top:0;
     left:0;
 
-    z-index:600;
+    width:100%;
+    height:85px;
 
-    background:rgba(25,35,30,.45);
+    display:flex;
+    align-items:center;
 
-    backdrop-filter:blur(2px);
-    -webkit-backdrop-filter:blur(2px);
+    padding:0 6%;
 
-    border-bottom:0px solid rgba(255,255,255,.08);
+    background:rgba(25,35,30,.40);
+
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+
+    z-index:1000;
 
 }
 
-.logo{
+.nav-left{
+
+    flex:1;
+
+}
+
+.nav-center{
+
+    flex:2;
+
+}
+
+.nav-right{
+
+    flex:1;
 
     display:flex;
 
-    align-items:center;
+    justify-content:flex-end;
 
 }
 
 .logo img{
 
-    height:180px;
+    height:58px;
 
-    width:10;
-
-    display:block;
+    width:auto;
 
 }
 
@@ -64,15 +79,19 @@ nav ul{
 
     display:flex;
 
-    list-style:none;
+    justify-content:center;
 
-    gap:40px;
+    align-items:center;
+
+    gap:28px;
+
+    list-style:none;
 
 }
 
 nav a{
 
-    color:#ffffff;
+    color:white;
 
     text-decoration:none;
 
@@ -80,20 +99,19 @@ nav a{
 
     font-weight:500;
 
-    letter-spacing:1px;
+    letter-spacing:.5px;
 
-    transition:.3s;
 }
 
 .book-btn{
 
-    border:1px solid #C7A96A;
+    border:1px solid #C6A66A;
 
-    color:#C7A96A;
+    color:#C6A66A;
 
-    padding:12px 28px;
+    border-radius:40px;
 
-    border-radius:50px;
+    padding:10px 24px;
 
     transition:.3s;
 
@@ -101,9 +119,10 @@ nav a{
 
 .book-btn:hover{
 
-    background:#C7A96A;
+    background:#C6A66A;
 
     color:white;
+
 }
 
 /* ==========================
