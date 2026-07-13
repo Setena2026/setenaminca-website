@@ -21,22 +21,25 @@ body{
 nav{
 
     width:100%;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    padding:30px 8%;
+    padding:20px 7%;
 
-    position:absolute;
-
+    position:fixed;
     top:0;
-
     left:0;
 
-    z-index:100;
+    z-index:1000;
+
+    background:rgba(33, 45, 39, 0.82);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
 
 }
 
@@ -50,7 +53,7 @@ nav{
 
 .logo img{
 
-    height:60px;
+    height:100px;
 
     width:auto;
 
