@@ -35,8 +35,8 @@ nav{
 
     background:rgba(25,35,30,.45);
 
-    backdrop-filter:blur(6px);
-    -webkit-backdrop-filter:blur(6px);
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
