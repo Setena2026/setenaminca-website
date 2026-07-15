@@ -207,7 +207,13 @@ header p{
 }
 
 }
+.room-hero img{
 
+    height:45vh;
+
+    border-radius:0;
+
+}
 
 
 /* =====================================
