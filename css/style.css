@@ -658,125 +658,6 @@ header p{
 }
 
 /* ==================================================
-   ROOMS
-================================================== */
-
-.rooms-hero{
-
-    height:100vh;
-
-    background-image:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-    url("../images/room-sol.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    color:white;
-
-}
-
-.room-section{
-
-    padding:140px 8%;
-
-    background:#F8F5EF;
-
-}
-
-.room-section.light{
-
-    background:white;
-
-}
-
-.room-container{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:90px;
-
-    align-items:center;
-
-    max-width:1400px;
-
-    margin:auto;
-
-}
-
-.room-container.reverse{
-
-    grid-template-columns:1fr 1fr;
-
-}
-
-.room-image img{
-
-    width:100%;
-
-    display:block;
-
-    border-radius:15px;
-
-}
-
-.room-text h2{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:60px;
-
-    margin:20px 0 30px;
-
-}
-
-.room-text p{
-
-    font-size:18px;
-
-    line-height:2;
-
-    margin-bottom:35px;
-
-}
-
-.room-features{
-
-    margin-bottom:40px;
-
-    padding-left:20px;
-
-}
-
-.room-features li{
-
-    margin-bottom:14px;
-
-    font-size:17px;
-
-}
-
-.reverse .room-text{
-
-    order:1;
-
-}
-
-.reverse .room-image{
-
-    order:2;
-
-}
-
-/* ==================================================
    ROOMS PAGE
 ================================================== */
 
@@ -1195,6 +1076,7 @@ header p{
     background:#8f733d;
 
 }
+
 /* =====================================
    MOBILE MENU
 ===================================== */
