@@ -119,15 +119,27 @@ header p{
 
 nav{
 
-    height:75px;
+    height:90px;
 
-    padding:0 20px;
+    padding:0 22px;
 
 }
 
 .logo{
 
-    width:170px;
+    width:180px;
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:100%;
+    height:auto;
+
+}
 
 }
 
@@ -141,7 +153,7 @@ nav{
 
     position:absolute;
 
-    top:75px;
+    top:90px;
 
     left:0;
 
