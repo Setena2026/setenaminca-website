@@ -1,83 +1,71 @@
 /* ==================================================
-   TABLETS
+   DESKTOP LARGE (1600px+)
 ================================================== */
 
-@media (max-width:1024px){
-
-/* NAVBAR */
-
-nav{
-
-    padding:0 30px;
-
-}
-
-.logo{
-
-    width:220px;
-
-}
-
-nav ul{
-
-    gap:18px;
-
-}
-
-nav a{
-
-    font-size:14px;
-
-}
-
-/* HERO */
+@media (min-width:1600px){
 
 header h1{
 
-    font-size:58px;
+    font-size:86px;
 
 }
 
 header p{
 
-    font-size:18px;
-
-    max-width:700px;
+    font-size:22px;
 
 }
 
-/* GENERAL SECTIONS */
+.logo{
 
-.welcome,
-.rooms-intro,
-.room-section,
-.layout-section,
-.why-section,
-.our-story,
-.philosophy,
-.team,
-.vision,
-.contact-section{
-
-    padding:90px 40px;
+    width:420px;
 
 }
 
-/* GRID */
+}
+
+
+
+/* ==================================================
+   LAPTOP
+================================================== */
+
+@media (max-width:1200px){
+
+nav{
+
+    padding:0 40px;
+
+}
+
+.logo{
+
+    width:270px;
+
+}
+
+nav ul{
+
+    gap:22px;
+
+}
+
+header h1{
+
+    font-size:62px;
+
+}
+
+header p{
+
+    font-size:19px;
+
+}
 
 .story-container,
 .room-container{
 
     grid-template-columns:1fr;
-
-    gap:60px;
-
-}
-
-.room-container.reverse .room-text,
-.room-container.reverse .room-image{
-
-    order:unset;
 
 }
 
@@ -99,47 +87,27 @@ header p{
 
 }
 
-.team-gallery{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
 }
 
 
 
 /* ==================================================
-   MOBILE
+   TABLET
 ================================================== */
 
-@media (max-width:768px){
-
-/* NAVBAR */
+@media (max-width:992px){
 
 nav{
 
-    height:90px;
+    height:85px;
 
-    padding:0 22px;
+    padding:0 30px;
 
 }
 
 .logo{
 
-    width:180px;
-
-    display:flex;
-    align-items:center;
-
-}
-
-.logo img{
-
-    width:100%;
-    height:auto;
-
-}
+    width:220px;
 
 }
 
@@ -147,19 +115,29 @@ nav{
 
     display:block;
 
+    font-size:34px;
+
+    color:white;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
 }
 
 .nav-center{
 
     position:absolute;
 
-    top:90px;
+    top:85px;
 
     left:0;
 
     width:100%;
 
-    background:rgba(28,40,32,.96);
+    background:rgba(23,35,30,.97);
 
     display:none;
 
@@ -173,13 +151,11 @@ nav{
 
 .nav-center ul{
 
-    display:flex;
-
     flex-direction:column;
 
-    gap:25px;
-
     padding:35px 0;
+
+    gap:25px;
 
 }
 
@@ -189,7 +165,82 @@ nav{
 
 }
 
-/* HERO */
+header h1{
+
+    font-size:54px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+}
+
+.welcome,
+.room-section,
+.layout-section,
+.why-section,
+.our-story,
+.philosophy,
+.team,
+.vision{
+
+    padding:90px 40px;
+
+}
+
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width:768px){
+
+nav{
+
+    height:90px;
+
+    padding:0 22px;
+
+}
+
+.logo{
+
+    width:180px;
+
+}
+
+.logo img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    font-size:38px;
+
+    color:white;
+
+    background:none;
+
+    border:none;
+
+}
+
+.nav-center{
+
+    top:90px;
+
+}
 
 header{
 
@@ -199,9 +250,9 @@ header{
 
 header h1{
 
-    font-size:44px;
+    font-size:42px;
 
-    line-height:1.2;
+    line-height:1.15;
 
 }
 
@@ -211,46 +262,32 @@ header p{
 
     line-height:1.8;
 
+    margin-top:20px;
+
 }
 
 .hero-btn{
 
     margin-top:35px;
 
+    width:100%;
+
+    max-width:280px;
+
 }
 
-/* GENERAL */
-
 .welcome,
-.rooms-intro,
 .room-section,
 .layout-section,
 .why-section,
 .our-story,
 .philosophy,
 .team,
-.vision,
-.contact-section{
+.vision{
 
     padding:70px 25px;
 
 }
-
-/* TITLES */
-
-h2{
-
-    font-size:42px !important;
-
-}
-
-h3{
-
-    font-size:28px;
-
-}
-
-/* GRID */
 
 .story-container,
 .room-container{
@@ -295,10 +332,7 @@ h3{
 
 }
 
-/* BUTTONS */
-
 .book-btn,
-.hero-btn,
 .story-btn{
 
     width:100%;
@@ -307,15 +341,11 @@ h3{
 
 }
 
-/* IMAGES */
+img{
 
-.room-image img,
-.story-image img,
-.team-gallery img{
+    max-width:100%;
 
-    width:100%;
-
-    display:block;
+    height:auto;
 
 }
 
@@ -329,9 +359,23 @@ h3{
 
 @media (max-width:480px){
 
+nav{
+
+    height:82px;
+
+    padding:0 18px;
+
+}
+
 .logo{
 
-    width:145px;
+    width:160px;
+
+}
+
+.nav-center{
+
+    top:82px;
 
 }
 
@@ -347,12 +391,6 @@ header p{
 
 }
 
-.hero-btn{
-
-    padding:15px 25px;
-
-}
-
 h2{
 
     font-size:34px !important;
@@ -365,33 +403,15 @@ h3{
 
 }
 
-nav{
-
-    height:70px;
-
-}
-
-.nav-center{
-
-    top:70px;
-
-}
-
 .room-gallery img{
 
     height:220px;
 
 }
 
-.room-specs div{
+.hero-btn{
 
-    padding:18px;
-
-}
-
-.layout-card{
-
-    padding:25px;
+    width:100%;
 
 }
 
