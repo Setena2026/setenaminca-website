@@ -1,0 +1,122 @@
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:85px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 6%;
+
+    background:rgba(25,35,30,.35);
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    z-index:9999;
+
+}
+
+.nav-left{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:260px;
+    height:auto;
+    display:block;
+
+}
+
+.nav-center{
+
+    display:flex;
+    justify-content:center;
+    flex:1;
+
+}
+
+.nav-center ul{
+
+    display:flex;
+    gap:34px;
+    list-style:none;
+
+}
+
+.nav-center a{
+
+    color:white;
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.nav-center a:hover{
+
+    color:#C6A66A;
+
+}
+
+.nav-right{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.book-btn{
+
+    border:1px solid #C6A66A;
+
+    color:#C6A66A;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.book-btn:hover{
+
+    background:#C6A66A;
+
+    color:white;
+
+}
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+}
