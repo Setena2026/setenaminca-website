@@ -314,3 +314,345 @@ header p{
     display:none;
 
 }
+
+/* ==================================================
+   ABOUT HERO
+================================================== */
+
+.about-hero{
+
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.35)
+    ),
+    url("../images/about-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.about-overlay{
+
+    max-width:850px;
+    padding:20px;
+
+}
+
+.about-overlay h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:90px;
+
+    font-weight:500;
+
+    margin-bottom:25px;
+
+}
+
+.about-overlay p{
+
+    font-size:26px;
+
+    line-height:1.8;
+
+}
+
+/* ==================================================
+   OUR STORY
+================================================== */
+
+.our-story{
+
+    padding:140px 8%;
+
+    background:#F8F5EF;
+
+}
+
+.story-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.section-subtitle{
+
+    color:#B28A46;
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.story-text h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:62px;
+
+    font-weight:500;
+
+    line-height:1.15;
+
+    margin:20px 0 35px;
+
+}
+
+.story-text p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:25px;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:14px;
+
+    display:block;
+
+}
+
+/* ==================================================
+   PHILOSOPHY
+================================================== */
+
+.philosophy{
+
+    padding:140px 8%;
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.philosophy h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    margin-bottom:70px;
+
+}
+
+.philosophy-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.card{
+
+    padding:50px;
+
+    border:1px solid #e6e1d8;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    line-height:1.9;
+
+}
+
+/* ==================================================
+   TEAM
+================================================== */
+
+.team{
+
+    padding:140px 8%;
+
+    background:#F8F5EF;
+
+    text-align:center;
+
+}
+
+.team h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+}
+
+.team p{
+
+    max-width:750px;
+
+    margin:25px auto 70px;
+
+    line-height:1.9;
+
+}
+
+.team-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.team-gallery img{
+
+    width:100%;
+
+    border-radius:14px;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.team-gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==================================================
+   VISION
+================================================== */
+
+.vision{
+
+    padding:140px 10%;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.vision h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    margin-bottom:35px;
+
+}
+
+.vision p{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    line-height:2;
+
+    font-size:19px;
+
+}
+
+/* ==================================================
+   CTA
+================================================== */
+
+.about-cta{
+
+    padding:170px 10%;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.35)
+    ),
+    url("../images/backgroundimage.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.about-cta h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    margin-bottom:25px;
+
+}
+
+.about-cta p{
+
+    font-size:22px;
+
+    margin-bottom:45px;
+
+}
