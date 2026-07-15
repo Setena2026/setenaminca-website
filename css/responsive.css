@@ -268,3 +268,46 @@ header p{
 }
 
 }
+/* ==========================
+   CONTACT RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+}
+
+.contact-info h2{
+
+    font-size:40px;
+
+}
+
+.contact-map iframe{
+
+    min-height:350px;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.footer-social{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+}
