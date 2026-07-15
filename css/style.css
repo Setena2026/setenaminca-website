@@ -775,3 +775,423 @@ header p{
     order:2;
 
 }
+
+/* ==================================================
+   ROOMS PAGE
+================================================== */
+
+/* HERO */
+
+.rooms-hero{
+
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,.40),
+    rgba(0,0,0,.40)
+    ),
+    url("../images/room-sol-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.rooms-intro{
+
+    padding:120px 8%;
+
+    background:#F8F5EF;
+
+    text-align:center;
+
+}
+
+.rooms-intro h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    margin:20px 0;
+
+}
+
+.rooms-intro p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+/* ==================================================
+   ROOM SECTION
+================================================== */
+
+.room-section{
+
+    padding:120px 8%;
+
+    background:white;
+
+}
+
+.room-section.light{
+
+    background:#F8F5EF;
+
+}
+
+.room-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.room-container.reverse .room-text{
+
+    order:1;
+
+}
+
+.room-container.reverse .room-image{
+
+    order:2;
+
+}
+
+.room-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+}
+
+.room-text h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    margin:15px 0 25px;
+
+}
+
+.room-text p{
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+/* ==================================================
+   SPECS
+================================================== */
+
+.room-specs{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin:45px 0;
+
+}
+
+.room-specs div{
+
+    padding:22px;
+
+    background:#f6f3ed;
+
+    border-radius:12px;
+
+}
+
+.room-specs strong{
+
+    color:#A98A4A;
+
+}
+
+/* ==================================================
+   FEATURES
+================================================== */
+
+.room-text h3{
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+}
+
+.room-features{
+
+    padding-left:20px;
+
+    margin-bottom:45px;
+
+}
+
+.room-features li{
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+/* ==================================================
+   GALLERY
+================================================== */
+
+.room-gallery{
+
+    max-width:1400px;
+
+    margin:0 auto 120px;
+
+    padding:0 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.room-gallery img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.room-gallery img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* ==================================================
+   LAYOUT
+================================================== */
+
+.layout-section{
+
+    padding:120px 8%;
+
+    background:white;
+
+}
+
+.layout-section h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    margin-bottom:60px;
+
+}
+
+.layout-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:45px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.layout-card{
+
+    padding:45px;
+
+    border:1px solid #e7e3dc;
+
+    border-radius:18px;
+
+}
+
+.layout-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.layout-card ul{
+
+    padding-left:20px;
+
+}
+
+.layout-card li{
+
+    margin-bottom:14px;
+
+    line-height:1.8;
+
+}
+
+/* ==================================================
+   WHY SECTION
+================================================== */
+
+.why-section{
+
+    padding:130px 8%;
+
+    background:#F8F5EF;
+
+    text-align:center;
+
+}
+
+.why-section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    margin:20px 0 30px;
+
+}
+
+.why-section p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:2;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.why-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:16px;
+
+    transition:.3s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.why-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    margin-bottom:15px;
+
+    font-size:30px;
+
+}
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.hero-btn{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    background:#A98A4A;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#8f733d;
+
+}
