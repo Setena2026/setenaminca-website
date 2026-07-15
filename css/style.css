@@ -1337,3 +1337,30 @@ footer small{
     font-size:14px;
 
 }
+.map-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 32px;
+
+    background:#C6A66A;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.map-btn:hover{
+
+    background:#1d2b24;
+
+}
