@@ -1,113 +1,20 @@
-/* ==================================================
-   DESKTOP LARGE (1600px+)
-================================================== */
-
-@media (min-width:1600px){
-
-header h1{
-
-    font-size:86px;
-
-}
-
-header p{
-
-    font-size:22px;
-
-}
-
-.logo{
-
-    width:420px;
-
-}
-
-}
-
-
-
-/* ==================================================
-   LAPTOP
-================================================== */
-
-@media (max-width:1200px){
-
-nav{
-
-    padding:0 40px;
-
-}
-
-.logo{
-
-    width:270px;
-
-}
-
-nav ul{
-
-    gap:22px;
-
-}
-
-header h1{
-
-    font-size:62px;
-
-}
-
-header p{
-
-    font-size:19px;
-
-}
-
-.story-container,
-.room-container{
-
-    grid-template-columns:1fr;
-
-}
-
-.room-gallery{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.layout-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.why-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-
-
-/* ==================================================
-   TABLET
-================================================== */
+/* =====================================
+   TABLETS
+===================================== */
 
 @media (max-width:992px){
 
 nav{
 
-    height:85px;
+    height:80px;
 
     padding:0 30px;
 
 }
 
-.logo{
+.logo img{
 
-    width:220px;
+    width:200px;
 
 }
 
@@ -115,31 +22,21 @@ nav{
 
     display:block;
 
-    font-size:34px;
-
-    color:white;
-
-    background:none;
-
-    border:none;
-
-    cursor:pointer;
-
 }
 
 .nav-center{
 
+    display:none;
+
     position:absolute;
 
-    top:85px;
+    top:80px;
 
     left:0;
 
     width:100%;
 
-    background:rgba(23,35,30,.97);
-
-    display:none;
+    background:rgba(25,35,30,.98);
 
 }
 
@@ -153,9 +50,11 @@ nav{
 
     flex-direction:column;
 
-    padding:35px 0;
+    align-items:center;
 
-    gap:25px;
+    gap:28px;
+
+    padding:35px 0;
 
 }
 
@@ -177,149 +76,6 @@ header p{
 
 }
 
-.welcome,
-.room-section,
-.layout-section,
-.why-section,
-.our-story,
-.philosophy,
-.team,
-.vision{
-
-    padding:90px 40px;
-
-}
-
-}
-
-
-
-/* ==================================================
-   MOBILE
-================================================== */
-
-@media (max-width:768px){
-
-nav{
-
-    height:90px;
-
-    padding:0 22px;
-
-}
-
-.logo{
-
-    width:180px;
-
-}
-
-.logo img{
-
-    width:100%;
-
-    height:auto;
-
-}
-
-.menu-toggle{
-
-    display:block;
-
-    font-size:38px;
-
-    color:white;
-
-    background:none;
-
-    border:none;
-
-}
-
-.nav-center{
-
-    position:absolute;
-
-    top:90px;
-
-    left:0;
-
-    width:100%;
-
-    background:rgba(23,35,30,.97);
-
-    display:none;
-
-    z-index:999;
-
-}
-
-.nav-center.active{
-
-    display:block;
-
-}
-
-.nav-center ul{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:25px;
-
-    padding:35px 0;
-
-}
-header{
-
-    padding:0 25px;
-
-}
-
-header h1{
-
-    font-size:42px;
-
-    line-height:1.15;
-
-}
-
-header p{
-
-    font-size:17px;
-
-    line-height:1.8;
-
-    margin-top:20px;
-
-}
-
-.hero-btn{
-
-    margin-top:35px;
-
-    width:100%;
-
-    max-width:280px;
-
-}
-
-.welcome,
-.room-section,
-.layout-section,
-.why-section,
-.our-story,
-.philosophy,
-.team,
-.vision{
-
-    padding:70px 25px;
-
-}
-
 .story-container,
 .room-container{
 
@@ -327,7 +83,100 @@ header p{
 
 }
 
+.philosophy-grid,
+.team-gallery,
+.why-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
 .room-gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.layout-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+nav{
+
+    height:75px;
+
+    padding:0 20px;
+
+}
+
+.logo img{
+
+    width:170px;
+
+}
+
+.nav-center{
+
+    top:75px;
+
+}
+
+header{
+
+    padding:0 20px;
+
+}
+
+header h1{
+
+    font-size:40px;
+
+    line-height:1.2;
+
+}
+
+header p{
+
+    font-size:17px;
+
+}
+
+.hero-btn{
+
+    margin-top:30px;
+
+}
+
+.welcome,
+.our-story,
+.philosophy,
+.team,
+.vision,
+.room-section,
+.rooms-intro,
+.layout-section,
+.why-section{
+
+    padding:70px 25px;
+
+}
+
+.room-gallery,
+.team-gallery,
+.philosophy-grid,
+.why-grid{
 
     grid-template-columns:1fr;
 
@@ -339,24 +188,6 @@ header p{
 
 }
 
-.layout-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.why-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.team-gallery{
-
-    grid-template-columns:1fr;
-
-}
-
 .room-specs{
 
     grid-template-columns:1fr;
@@ -364,55 +195,48 @@ header p{
 }
 
 .book-btn,
-.story-btn{
+.story-btn,
+.hero-btn{
 
     width:100%;
+
+    max-width:280px;
 
     text-align:center;
 
 }
 
-img{
-
-    max-width:100%;
-
-    height:auto;
-
-}
-
 }
 
 
 
-/* ==================================================
+/* =====================================
    SMALL PHONES
-================================================== */
+===================================== */
 
 @media (max-width:480px){
 
 nav{
 
-    height:82px;
-
-    padding:0 18px;
+    height:70px;
 
 }
 
-.logo{
+.logo img{
 
-    width:160px;
+    width:150px;
 
 }
 
 .nav-center{
 
-    top:82px;
+    top:70px;
 
 }
 
 header h1{
 
-    font-size:34px;
+    font-size:32px;
 
 }
 
@@ -422,27 +246,18 @@ header p{
 
 }
 
-h2{
+.welcome h3,
+.story-text h2,
+.room-text h2,
+.about-overlay h1{
 
-    font-size:34px !important;
-
-}
-
-h3{
-
-    font-size:24px;
+    font-size:38px;
 
 }
 
 .room-gallery img{
 
     height:220px;
-
-}
-
-.hero-btn{
-
-    width:100%;
 
 }
 
