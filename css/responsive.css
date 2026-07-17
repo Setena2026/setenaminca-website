@@ -386,3 +386,68 @@ header p{
 }
 
 }
+/* ==========================
+   EXPERIENCES RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+.experience-hero{
+
+    height:60vh;
+
+}
+
+.experience-hero h1{
+
+    font-size:46px;
+
+}
+
+.experience-hero p{
+
+    font-size:17px;
+
+}
+
+.experience-intro{
+
+    padding:70px 25px;
+
+}
+
+.experience-intro h2{
+
+    font-size:38px;
+
+}
+
+.experience-section{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+    padding:70px 25px;
+
+}
+
+.experience-section.reverse{
+
+    direction:ltr;
+
+}
+
+.experience-image img{
+
+    height:300px;
+
+}
+
+.experience-text h2{
+
+    font-size:38px;
+
+}
+
+}
