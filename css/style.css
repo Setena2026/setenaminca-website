@@ -1364,3 +1364,221 @@ footer small{
     background:#1d2b24;
 
 }
+/* ==========================
+   GALLERY HERO
+========================== */
+
+.gallery-hero{
+
+    height:70vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("../images/gallery-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.gallery-hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    margin:18px 0;
+
+}
+
+.gallery-hero p{
+
+    font-size:20px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   INTRO
+========================== */
+
+.gallery-intro{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#f8f5ef;
+
+}
+
+.gallery-intro h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+}
+
+.gallery-intro p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+/* ==========================
+   GALLERY SECTIONS
+========================== */
+
+.gallery-category{
+
+    padding:90px 8%;
+
+}
+
+.gallery-category h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.gallery-text{
+
+    max-width:800px;
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* ==========================
+   PANORAMIC IMAGE
+========================== */
+
+.gallery-banner{
+
+    padding:20px 8% 90px;
+
+}
+
+.gallery-banner img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.about-cta{
+
+    text-align:center;
+
+    padding:110px 8%;
+
+    background:#f2ede3;
+
+}
+
+.about-cta h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:56px;
+
+    margin-bottom:25px;
+
+}
+
+.about-cta p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
