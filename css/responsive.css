@@ -311,3 +311,78 @@ header p{
 }
 
 }
+/* ==========================
+   GALLERY RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+.gallery-hero{
+
+    height:60vh;
+
+}
+
+.gallery-hero h1{
+
+    font-size:46px;
+
+}
+
+.gallery-hero p{
+
+    font-size:17px;
+
+}
+
+.gallery-intro{
+
+    padding:70px 25px;
+
+}
+
+.gallery-intro h2{
+
+    font-size:38px;
+
+}
+
+.gallery-category{
+
+    padding:70px 25px;
+
+}
+
+.gallery-category h2{
+
+    font-size:36px;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid img{
+
+    height:280px;
+
+}
+
+.gallery-banner{
+
+    padding:0 25px 70px;
+
+}
+
+.gallery-banner img{
+
+    height:320px;
+
+    border-radius:16px;
+
+}
+
+}
