@@ -1943,3 +1943,33 @@ footer small{
     line-height:1.8;
 
 }
+
+/* ==========================
+   SEO INTRO
+========================== */
+
+.seo-intro{
+
+    max-width:900px;
+    margin:100px auto;
+    padding:0 30px;
+    text-align:center;
+
+}
+
+.seo-intro h2{
+
+    font-family:var(--title-font);
+    font-size:48px;
+    color:var(--green);
+    margin-bottom:25px;
+
+}
+
+.seo-intro p{
+
+    font-size:18px;
+    line-height:1.9;
+    color:var(--text-color);
+
+}
