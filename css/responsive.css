@@ -451,3 +451,42 @@ header p{
 }
 
 }
+/* ==========================
+   DIGITAL NOMADS
+========================== */
+
+.nomad-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.digital-nomads{
+
+    padding:70px 25px;
+
+}
+
+.digital-nomads h2{
+
+    font-size:40px;
+
+}
+
+.digital-nomads>p{
+
+    margin-bottom:40px;
+
+}
+
+.nomad-card{
+
+    padding:30px 25px;
+
+}
+
+.nomad-card h3{
+
+    font-size:28px;
+
+}
