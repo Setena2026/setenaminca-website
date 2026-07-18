@@ -1842,3 +1842,104 @@ footer small{
     font-weight:600;
 
 }
+/* ==========================
+   DIGITAL NOMADS
+========================== */
+
+.digital-nomads{
+
+    padding:120px 8%;
+
+    background:#F8F5EF;
+
+    text-align:center;
+
+}
+
+.digital-nomads h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:56px;
+
+    color:#1D2B24;
+
+    margin:20px 0;
+
+}
+
+.digital-nomads>p{
+
+    max-width:780px;
+
+    margin:0 auto 60px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.nomad-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.nomad-card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.nomad-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.nomad-icon{
+
+    display:block;
+
+    font-size:28px;
+
+    color:#A67C52;
+
+    margin-bottom:20px;
+
+    line-height:1;
+
+}
+
+.nomad-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#1D2B24;
+
+    margin-bottom:15px;
+
+}
+
+.nomad-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
