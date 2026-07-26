@@ -62,3 +62,38 @@ if(lightbox){
     });
 
 }
+/* ======================================
+LEGAL ACCORDIONS
+====================================== */
+
+const legalItems = document.querySelectorAll(".legal-item");
+
+legalItems.forEach(item => {
+
+    const button = item.querySelector(".legal-btn");
+
+    button.addEventListener("click", () => {
+
+        const isOpen = item.classList.contains("active");
+
+        legalItems.forEach(section => {
+
+            section.classList.remove("active");
+
+            section.querySelector(".legal-content").style.maxHeight = null;
+
+        });
+
+        if (!isOpen) {
+
+            item.classList.add("active");
+
+            const content = item.querySelector(".legal-content");
+
+            content.style.maxHeight = content.scrollHeight + "px";
+
+        }
+
+    });
+
+});
