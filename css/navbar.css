@@ -120,3 +120,112 @@ nav{
     cursor:pointer;
 
 }
+/* ==========================================
+LANGUAGE SELECTOR
+========================================== */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.language-selector{
+
+    position:relative;
+
+}
+
+.language-btn{
+
+    background:transparent;
+
+    border:none;
+
+    color:white;
+
+    font-family:'Manrope',sans-serif;
+
+    font-size:.9rem;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    transition:.3s;
+
+}
+
+.language-btn:hover{
+
+    color:#C6A15B;
+
+}
+
+.language-dropdown{
+
+    position:absolute;
+
+    top:35px;
+
+    right:0;
+
+    width:160px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    overflow:hidden;
+
+    display:none;
+
+    z-index:9999;
+
+}
+
+.language-dropdown.show{
+
+    display:block;
+
+}
+
+.language-dropdown button{
+
+    width:100%;
+
+    border:none;
+
+    background:white;
+
+    padding:14px 18px;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    color:#1E352C;
+
+    font-family:'Manrope',sans-serif;
+
+    transition:.25s;
+
+}
+
+.language-dropdown button:hover{
+
+    background:#F7F5F1;
+
+    color:#C6A15B;
+
+}
