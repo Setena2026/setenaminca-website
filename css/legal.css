@@ -1,29 +1,37 @@
-/* ==========================================
-LEGAL PAGE
+/*==================================================
 Se'Tena Tierra Húmeda
-========================================== */
+LEGAL PAGE
+==================================================*/
+
+/*==============================
+GENERAL
+==============================*/
 
 body{
 
-    background:#F7F5F1;
+    background:#F8F6F2;
+    color:#2E3B34;
 
 }
 
-/* ==========================================
+.legal-page{
+
+    overflow:hidden;
+
+}
+
+
+/*==============================
 HERO
-========================================== */
+==============================*/
 
 .legal-hero{
 
-    height:60vh;
+    position:relative;
 
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("../images/legal-hero.jpg");
+    height:48vh;
 
-    background-size:cover;
-
-    background-position:center;
+    min-height:420px;
 
     display:flex;
 
@@ -33,9 +41,42 @@ HERO
 
     text-align:center;
 
+    background:
+    linear-gradient(
+        rgba(20,42,34,.62),
+        rgba(20,42,34,.62)
+    ),
+    url("../images/legal-hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.legal-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        180deg,
+        rgba(18,37,30,.10),
+        rgba(18,37,30,.28)
+    );
+
 }
 
 .legal-hero .about-overlay{
+
+    position:relative;
+
+    z-index:2;
 
     width:min(900px,90%);
 
@@ -45,45 +86,54 @@ HERO
 
     display:block;
 
-    color:var(--gold);
+    margin-bottom:18px;
+
+    color:#C7A15A;
+
+    letter-spacing:6px;
 
     text-transform:uppercase;
 
-    letter-spacing:4px;
-
     font-size:.85rem;
 
-    margin-bottom:15px;
+    font-weight:600;
 
 }
 
 .legal-hero h1{
 
-    color:white;
+    font-family:'Cormorant Garamond',serif;
 
-    font-size:4.2rem;
+    color:#F8F6F2;
 
-    margin-bottom:20px;
+    font-size:5rem;
+
+    font-weight:500;
+
+    line-height:1.05;
+
+    margin-bottom:28px;
 
 }
 
 .legal-hero p{
 
-    color:white;
+    color:rgba(255,255,255,.92);
 
     font-size:1.15rem;
 
-    line-height:2;
-
-    max-width:700px;
+    max-width:720px;
 
     margin:auto;
 
+    line-height:1.9;
+
 }
 
-/* ==========================================
+
+/*==============================
 INTRO
-========================================== */
+==============================*/
 
 .legal-intro{
 
@@ -91,45 +141,68 @@ INTRO
 
     margin:auto;
 
-    padding:90px 0 70px;
+    padding:80px 0 60px;
 
     text-align:center;
 
 }
 
+.legal-intro span{
+
+    display:block;
+
+    color:#B68C45;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+
+    font-size:.85rem;
+
+}
+
 .legal-intro h2{
 
-    font-size:3rem;
+    font-family:'Cormorant Garamond',serif;
 
-    color:var(--green);
+    font-size:4rem;
+
+    color:#1E352C;
 
     margin-bottom:25px;
+
+    line-height:1.1;
 
 }
 
 .legal-intro p{
 
+    max-width:760px;
+
+    margin:0 auto 18px;
+
     color:#666;
 
     line-height:2;
-
-    margin-bottom:18px;
 
 }
 
 .legal-date{
 
-    color:var(--gold);
+    margin-top:35px;
+
+    color:#B68C45;
 
     font-weight:600;
 
-    margin-top:35px;
-
 }
 
-/* ==========================================
+
+/*==============================
 IMPORTANT NOTICE
-========================================== */
+==============================*/
 
 .legal-notice{
 
@@ -143,13 +216,13 @@ IMPORTANT NOTICE
 
 .notice-container{
 
-    background:white;
+    background:#FFFFFF;
 
-    border-radius:18px;
+    border-radius:24px;
 
-    padding:45px;
+    padding:55px;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.05);
+    box-shadow:0 25px 70px rgba(0,0,0,.06);
 
 }
 
@@ -157,11 +230,13 @@ IMPORTANT NOTICE
 
     text-align:center;
 
-    color:var(--green);
+    font-family:'Cormorant Garamond',serif;
 
-    font-size:2rem;
+    font-size:2.5rem;
 
-    margin-bottom:40px;
+    color:#1E352C;
+
+    margin-bottom:45px;
 
 }
 
@@ -171,7 +246,7 @@ IMPORTANT NOTICE
 
     grid-template-columns:repeat(4,1fr);
 
-    gap:20px;
+    gap:22px;
 
 }
 
@@ -179,70 +254,92 @@ IMPORTANT NOTICE
 
     background:#F7F5F1;
 
-    border-radius:12px;
+    border-radius:18px;
 
-    padding:25px;
+    padding:30px 20px;
 
     text-align:center;
 
-    font-weight:600;
+    transition:.35s;
 
-    color:var(--green);
-
-    line-height:1.7;
-
-    transition:.3s;
+    border:1px solid rgba(182,140,69,.15);
 
 }
 
 .notice-item:hover{
 
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.08);
+
+}
+
+.notice-item h4{
+
+    color:#1E352C;
+
+    font-size:1.05rem;
+
+    margin-bottom:8px;
+
+}
+
+.notice-item p{
+
+    color:#777;
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+}
+/*==================================================
+LEGAL ACCORDIONS
+==================================================*/
+
+.legal-container{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    padding-bottom:140px;
+
+}
+
+
+/* Card */
+
+.legal-item{
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    margin-bottom:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(183,164,122,.15);
+
+    box-shadow:0 20px 60px rgba(26,42,35,.05);
+
+    transition:.35s;
+
+}
+
+.legal-item:hover{
+
     transform:translateY(-4px);
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-}
-/* ==========================================
-LEGAL ACCORDIONS
-========================================== */
-
-.legal-container{
-
-    width:min(1050px,92%);
-
-    margin:auto;
-
-    padding-bottom:120px;
+    box-shadow:0 30px 80px rgba(26,42,35,.08);
 
 }
 
-.legal-item{
 
-    background:white;
-
-    border-radius:18px;
-
-    margin-bottom:22px;
-
-    overflow:hidden;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.05);
-
-    transition:.35s;
-
-}
-
-.legal-item:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:0 25px 60px rgba(0,0,0,.08);
-
-}
-
-/* ==========================================
+/*==============================
 BUTTON
-========================================== */
+==============================*/
 
 .legal-btn{
 
@@ -252,6 +349,8 @@ BUTTON
 
     border:none;
 
+    cursor:pointer;
+
     padding:38px 45px;
 
     display:flex;
@@ -260,11 +359,18 @@ BUTTON
 
     align-items:center;
 
-    cursor:pointer;
-
-    text-align:left;
+    transition:.3s;
 
 }
+
+.legal-btn:hover{
+
+    background:#FAF8F4;
+
+}
+
+
+/* Left */
 
 .legal-btn div{
 
@@ -272,17 +378,21 @@ BUTTON
 
     flex-direction:column;
 
+    text-align:left;
+
 }
 
 .legal-btn small{
 
-    color:var(--gold);
+    color:#B68C45;
 
-    letter-spacing:4px;
+    letter-spacing:5px;
 
     text-transform:uppercase;
 
-    font-size:.8rem;
+    font-size:.75rem;
+
+    font-weight:700;
 
     margin-bottom:10px;
 
@@ -290,23 +400,38 @@ BUTTON
 
 .legal-btn h3{
 
+    margin:0;
+
     font-family:'Cormorant Garamond',serif;
 
     font-size:2.1rem;
 
+    color:#1E352C;
+
     font-weight:500;
 
-    color:var(--green);
-
-    margin:0;
+    transition:.3s;
 
 }
 
+.legal-btn p{
+
+    margin-top:8px;
+
+    color:#8A8A8A;
+
+    font-size:.95rem;
+
+}
+
+
+/* Arrow */
+
 .legal-icon{
 
-    font-size:2.5rem;
+    font-size:2rem;
 
-    color:var(--green);
+    color:#B68C45;
 
     transition:.35s;
 
@@ -316,13 +441,12 @@ BUTTON
 
     transform:rotate(90deg);
 
-    color:var(--gold);
-
 }
 
-/* ==========================================
+
+/*==============================
 CONTENT
-========================================== */
+==============================*/
 
 .legal-content{
 
@@ -332,27 +456,27 @@ CONTENT
 
     transition:max-height .55s ease;
 
-    padding:0 45px;
+    padding:0 50px;
 
 }
 
 .legal-item.active .legal-content{
 
-    padding-bottom:45px;
+    padding-bottom:50px;
 
 }
 
 .legal-content h3{
 
+    margin-top:45px;
+
+    margin-bottom:18px;
+
     font-family:'Cormorant Garamond',serif;
 
     font-size:1.8rem;
 
-    color:var(--green);
-
-    margin-top:45px;
-
-    margin-bottom:18px;
+    color:#1E352C;
 
 }
 
@@ -368,9 +492,9 @@ CONTENT
 
 .legal-content ul{
 
-    margin-left:25px;
+    margin-left:22px;
 
-    margin-bottom:30px;
+    margin-bottom:28px;
 
 }
 
@@ -378,15 +502,21 @@ CONTENT
 
     color:#666;
 
+    margin-bottom:14px;
+
     line-height:2;
 
-    margin-bottom:12px;
+}
+
+.legal-content li::marker{
+
+    color:#B68C45;
 
 }
 
 .legal-content strong{
 
-    color:#2f4635;
+    color:#1E352C;
 
 }
 
@@ -396,227 +526,31 @@ CONTENT
 
     height:1px;
 
-    background:#E8E2D6;
+    background:#ECE5D8;
 
     margin:45px 0;
 
 }
 
-/* ==========================================
-LIST STYLE
-========================================== */
 
-.legal-content ul li::marker{
+/*==============================
+OPEN STATE
+==============================*/
 
-    color:var(--gold);
+.legal-item.active{
 
-}
-/* ==========================================
-LEGAL ACCORDIONS
-========================================== */
-
-.legal-container{
-
-    width:min(1050px,92%);
-
-    margin:auto;
-
-    padding-bottom:120px;
+    border:1px solid rgba(182,140,69,.35);
 
 }
 
-.legal-item{
+.legal-item.active .legal-btn{
 
-    background:white;
-
-    border-radius:18px;
-
-    margin-bottom:22px;
-
-    overflow:hidden;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.05);
-
-    transition:.35s;
+    background:#F9F7F2;
 
 }
 
-.legal-item:hover{
+.legal-item.active .legal-btn h3{
 
-    transform:translateY(-3px);
-
-    box-shadow:0 25px 60px rgba(0,0,0,.08);
-
-}
-
-/* ==========================================
-BUTTON
-========================================== */
-
-.legal-btn{
-
-    width:100%;
-
-    background:none;
-
-    border:none;
-
-    padding:38px 45px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    cursor:pointer;
-
-    text-align:left;
-
-}
-
-.legal-btn div{
-
-    display:flex;
-
-    flex-direction:column;
-
-}
-
-.legal-btn small{
-
-    color:var(--gold);
-
-    letter-spacing:4px;
-
-    text-transform:uppercase;
-
-    font-size:.8rem;
-
-    margin-bottom:10px;
-
-}
-
-.legal-btn h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:2.1rem;
-
-    font-weight:500;
-
-    color:var(--green);
-
-    margin:0;
-
-}
-
-.legal-icon{
-
-    font-size:2.5rem;
-
-    color:var(--green);
-
-    transition:.35s;
-
-}
-
-.legal-item.active .legal-icon{
-
-    transform:rotate(90deg);
-
-    color:var(--gold);
-
-}
-
-/* ==========================================
-CONTENT
-========================================== */
-
-.legal-content{
-
-    max-height:0;
-
-    overflow:hidden;
-
-    transition:max-height .55s ease;
-
-    padding:0 45px;
-
-}
-
-.legal-item.active .legal-content{
-
-    padding-bottom:45px;
-
-}
-
-.legal-content h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:1.8rem;
-
-    color:var(--green);
-
-    margin-top:45px;
-
-    margin-bottom:18px;
-
-}
-
-.legal-content p{
-
-    color:#666;
-
-    line-height:2;
-
-    margin-bottom:18px;
-
-}
-
-.legal-content ul{
-
-    margin-left:25px;
-
-    margin-bottom:30px;
-
-}
-
-.legal-content li{
-
-    color:#666;
-
-    line-height:2;
-
-    margin-bottom:12px;
-
-}
-
-.legal-content strong{
-
-    color:#2f4635;
-
-}
-
-.legal-content hr{
-
-    border:none;
-
-    height:1px;
-
-    background:#E8E2D6;
-
-    margin:45px 0;
-
-}
-
-/* ==========================================
-LIST STYLE
-========================================== */
-
-.legal-content ul li::marker{
-
-    color:var(--gold);
+    color:#B68C45;
 
 }
