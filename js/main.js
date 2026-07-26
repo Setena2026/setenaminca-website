@@ -97,3 +97,40 @@ legalItems.forEach(item => {
     });
 
 });
+/* ==========================================
+LANGUAGE SELECTOR
+========================================== */
+
+const languageBtn = document.getElementById("languageBtn");
+const languageDropdown = document.getElementById("languageDropdown");
+const currentLanguage = document.getElementById("currentLanguage");
+
+if(languageBtn){
+
+    languageBtn.addEventListener("click",function(e){
+
+        e.stopPropagation();
+
+        languageDropdown.classList.toggle("show");
+
+    });
+
+    document.querySelectorAll(".language-dropdown button").forEach(button=>{
+
+        button.addEventListener("click",function(){
+
+            currentLanguage.textContent=this.dataset.lang.toUpperCase();
+
+            languageDropdown.classList.remove("show");
+
+        });
+
+    });
+
+    document.addEventListener("click",function(){
+
+        languageDropdown.classList.remove("show");
+
+    });
+
+}
