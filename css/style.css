@@ -2305,11 +2305,11 @@ TEXT
 /*=========================================
 IMAGE SLIDER
 =========================================*/
-
 .team-photo.slider{
 
     position:relative;
     height:560px;
+    overflow:hidden;
 
 }
 
@@ -2317,19 +2317,19 @@ IMAGE SLIDER
 
     position:absolute;
     inset:0;
+
     width:100%;
     height:100%;
+
     object-fit:cover;
 
-    opacity:0;
-
-    transition:opacity 1.5s ease-in-out;
+    display:none;
 
 }
 
 .team-photo.slider img.active{
 
-    opacity:1;
+    display:block;
 
 }
 
