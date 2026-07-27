@@ -172,15 +172,26 @@ document.querySelectorAll(".team-photo.slider").forEach(slider => {
 
     let current = 0;
 
-    images.forEach(img => img.classList.remove("active"));
+    // Ocultar todas
+    images.forEach(img => {
+
+        img.style.display = "none";
+        img.classList.remove("active");
+
+    });
+
+    // Mostrar la primera
+    images[0].style.display = "block";
     images[0].classList.add("active");
 
     setInterval(() => {
 
+        images[current].style.display = "none";
         images[current].classList.remove("active");
 
         current = (current + 1) % images.length;
 
+        images[current].style.display = "block";
         images[current].classList.add("active");
 
     }, 4000);
