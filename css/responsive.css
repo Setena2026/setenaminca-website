@@ -519,6 +519,7 @@ MOBILE
     .team-member.reverse{
 
         flex-direction:column !important;
+        align-items:center;
         gap:30px;
         margin-bottom:80px;
         text-align:center;
@@ -533,7 +534,9 @@ MOBILE
 
     }
 
-    .team-photo img{
+    /* SOLO LAS FOTOS NORMALES */
+
+    .team-photo:not(.slider) img{
 
         width:100%;
         height:420px;
@@ -541,6 +544,8 @@ MOBILE
         object-position:center top;
 
     }
+
+    /* SLIDER */
 
     .team-photo.slider{
 
@@ -548,7 +553,6 @@ MOBILE
         width:100%;
         max-width:340px;
         height:420px;
-        margin:auto;
         overflow:hidden;
 
     }
@@ -556,14 +560,23 @@ MOBILE
     .team-photo.slider img{
 
         position:absolute;
-        top:0;
-        left:0;
+        inset:0;
 
         width:100%;
         height:100%;
 
         object-fit:cover;
         object-position:center top;
+
+        opacity:0;
+
+        transition:opacity 1s ease;
+
+    }
+
+    .team-photo.slider img.active{
+
+        opacity:1;
 
     }
 
