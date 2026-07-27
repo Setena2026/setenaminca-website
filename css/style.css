@@ -1973,3 +1973,202 @@ footer small{
     color:var(--text-color);
 
 }
+/*=========================================
+OPENING OFFER POPUP
+=========================================*/
+
+.popup-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.60);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    padding:20px;
+
+}
+
+.popup-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:50px 40px;
+
+    position:relative;
+
+    text-align:center;
+
+    animation:popup .45s ease;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.30);
+
+}
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+.popup-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    border:none;
+
+    background:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+.popup-close:hover{
+
+    color:#1E352C;
+
+}
+
+.popup-badge{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:#B89249;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    font-size:.85rem;
+
+}
+
+.popup-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.4rem;
+
+    color:#1E352C;
+
+    margin-bottom:20px;
+
+}
+
+.popup-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.popup-btn{
+
+    display:inline-block;
+
+    background:#1E352C;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 36px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.popup-btn:hover{
+
+    background:#B89249;
+
+}
+
+.popup-card small{
+
+    display:block;
+
+    margin-top:25px;
+
+    color:#999;
+
+    letter-spacing:1px;
+
+}
+
+/*================ MOBILE ================*/
+
+@media(max-width:768px){
+
+.popup-card{
+
+    padding:40px 28px;
+
+}
+
+.popup-card h2{
+
+    font-size:2rem;
+
+}
+
+.popup-card p{
+
+    font-size:.95rem;
+
+}
+
+.popup-btn{
+
+    width:100%;
+
+}
+
+}
