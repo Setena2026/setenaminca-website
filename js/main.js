@@ -164,32 +164,32 @@ window.addEventListener("click",(e)=>{
 TEAM PHOTO SLIDER
 =========================================*/
 
-window.addEventListener("load", () => {
+const sliders = document.querySelectorAll(".team-photo.slider");
 
-    document.querySelectorAll(".team-photo.slider").forEach(slider => {
+sliders.forEach((slider) => {
 
-        const images = slider.querySelectorAll("img");
+    const images = slider.querySelectorAll("img");
 
-        if(images.length <= 1) return;
+    let current = 0;
 
-        let current = 0;
+    if(images.length <= 1) return;
 
-        // Quitar active de todas
-        images.forEach(img => img.classList.remove("active"));
+    images[current].classList.add("active");
 
-        // Mostrar la primera
-        images[0].classList.add("active");
+    setInterval(() => {
 
-        setInterval(() => {
+        images[current].classList.remove("active");
 
-            images[current].classList.remove("active");
+        current++;
 
-            current = (current + 1) % images.length;
+        if(current >= images.length){
 
-            images[current].classList.add("active");
+            current = 0;
 
-        },4000);
+        }
 
-    });
+        images[current].classList.add("active");
+
+    },4000);
 
 });
