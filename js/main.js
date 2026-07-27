@@ -160,3 +160,47 @@ window.addEventListener("click",(e)=>{
     }
 
 });
+/*=========================================
+TEAM PHOTO SLIDER
+=========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sliders = document.querySelectorAll(".team-photo.slider");
+
+    sliders.forEach(slider => {
+
+        const images = slider.querySelectorAll("img");
+
+        if(images.length <= 1) return;
+
+        let current = 0;
+
+        // Mostrar solo la primera imagen
+        images.forEach((img,index)=>{
+
+            if(index===0){
+
+                img.classList.add("active");
+
+            }else{
+
+                img.classList.remove("active");
+
+            }
+
+        });
+
+        setInterval(()=>{
+
+            images[current].classList.remove("active");
+
+            current = (current + 1) % images.length;
+
+            images[current].classList.add("active");
+
+        },4000);
+
+    });
+
+});
