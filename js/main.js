@@ -164,36 +164,32 @@ window.addEventListener("click",(e)=>{
 TEAM PHOTO SLIDER
 =========================================*/
 
-document.querySelectorAll(".team-photo.slider").forEach(slider => {
+window.addEventListener("load", () => {
 
-    const images = slider.querySelectorAll("img");
+    document.querySelectorAll(".team-photo.slider").forEach(slider => {
 
-    if(images.length <= 1) return;
+        const images = slider.querySelectorAll("img");
 
-    let current = 0;
+        if(images.length <= 1) return;
 
-    // Ocultar todas
-    images.forEach(img => {
+        let current = 0;
 
-        img.style.display = "none";
-        img.classList.remove("active");
+        // Quitar active de todas
+        images.forEach(img => img.classList.remove("active"));
+
+        // Mostrar la primera
+        images[0].classList.add("active");
+
+        setInterval(() => {
+
+            images[current].classList.remove("active");
+
+            current = (current + 1) % images.length;
+
+            images[current].classList.add("active");
+
+        },4000);
 
     });
-
-    // Mostrar la primera
-    images[0].style.display = "block";
-    images[0].classList.add("active");
-
-    setInterval(() => {
-
-        images[current].style.display = "none";
-        images[current].classList.remove("active");
-
-        current = (current + 1) % images.length;
-
-        images[current].style.display = "block";
-        images[current].classList.add("active");
-
-    }, 4000);
 
 });
